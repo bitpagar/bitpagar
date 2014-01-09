@@ -2232,8 +2232,8 @@ Adresa:%4
     </message>
     <message>
         <location line="-28"/>
-        <source>Listen for connections on &lt;port&gt; (default: 8333 or testnet: 18333)</source>
-        <translation>Slušaj na &lt;port&gt;u (default: 8333 ili testnet: 18333)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 1965 or testnet: 11965)</source>
+        <translation>Slušaj na &lt;port&gt;u (default: 1965 ili testnet: 11965)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -2267,8 +2267,8 @@ Adresa:%4
     </message>
     <message>
         <location line="+27"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 8332 or testnet: 18332)</source>
-        <translation>Prihvaćaj JSON-RPC povezivanje na portu broj &lt;port&gt; (ugrađeni izbor: 8332 or testnet: 18332)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 1964 or testnet: 11964)</source>
+        <translation>Prihvaćaj JSON-RPC povezivanje na portu broj &lt;port&gt; (ugrađeni izbor: 1964 or testnet: 11964)</translation>
     </message>
     <message>
         <location line="+37"/>
