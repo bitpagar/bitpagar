@@ -7,7 +7,7 @@
 #include "optionsmodel.h"
 
 #include <QPixmap>
-#include <QUrl>
+//#include <QUrl>
 
 #include <qrencode.h>
 

@@ -18,7 +18,7 @@
 #include <QLocalServer>
 #include <QLocalSocket>
 #include <QStringList>
-#include <QUrl>
+//#include <QUrl>
 
 using namespace boost;
 

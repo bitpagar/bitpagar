@@ -44,7 +44,7 @@
 #include <QMovie>
 #include <QTimer>
 #include <QDragEnterEvent>
-#include <QUrl>
+//#include <QUrl>
 #include <QMimeData>
 #include <QStyle>
 #include <QSettings>
