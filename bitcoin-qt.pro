@@ -8,6 +8,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
 CONFIG += no_include_pwd
 CONFIG += thread
+CONFIG += static
 
 # for boost 1.37, add -mt to the boost libraries
 # use: qmake BOOST_LIB_SUFFIX=-mt
@@ -18,6 +19,18 @@ CONFIG += thread
 # Dependency library locations can be customized with:
 #    BOOST_INCLUDE_PATH, BOOST_LIB_PATH, BDB_INCLUDE_PATH,
 #    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
+
+win32:BOOST_LIB_SUFFIX=-mgw48-mt-s-1_55
+win32:BOOST_INCLUDE_PATH=C:/deps/boost_1_55_0
+win32:BOOST_LIB_PATH=C:/deps/boost_1_55_0/stage/lib
+win32:BDB_INCLUDE_PATH=C:/deps/db-4.8.30.NC/build_unix
+win32:BDB_LIB_PATH=C:/deps/db-4.8.30.NC/build_unix
+win32:OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1g/include
+win32:OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1g
+win32:MINIUPNPC_INCLUDE_PATH=C:/deps/
+win32:MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
+win32:QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.3
+win32:QRENCODE_LIB_PATH=C:/deps/qrencode-3.4.3/.libs
 
 OBJECTS_DIR = build
 MOC_DIR = build
@@ -48,7 +61,7 @@ QMAKE_CXXFLAGS *= -D_FORTIFY_SOURCE=2
 # for extra security on Windows: enable ASLR and DEP via GCC linker flags
 win32:QMAKE_LFLAGS *= -Wl,--dynamicbase -Wl,--nxcompat
 # on Windows: enable GCC large address aware linker flag
-win32:QMAKE_LFLAGS *= -Wl,--large-address-aware
+win32:QMAKE_LFLAGS *= -Wl,--large-address-aware -static
 
 # use: qmake "USE_QRCODE=1"
 # libqrencode (http://fukuchi.org/works/qrencode/index.en.html) must be installed for support
