@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>Bitpagar</Name>
+    <Version>0.8</Version>
+    <Title>Bitpagar Installer</Title>
+    <Publisher>BitPagar</Publisher>
+    <StartMenuDir>BitPagar</StartMenuDir>
+    <TargetDir>@RootDir@bitpagar</TargetDir>
+</Installer>

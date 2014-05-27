@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>Bitpagar wallet</DisplayName>
+    <Description>Install the wallet.</Description>
+    <Version>0.8</Version>
+    <ReleaseDate>2014-04-07</ReleaseDate>
+    <Name>com.vendor.product</Name>
+    <Licenses>
+        <License name="The MIT License Agreement" file="COPYING" />
+    </Licenses>
+    <Default>script</Default>
+    <Script>installscript.qs</Script>
+</Package>
